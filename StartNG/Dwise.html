@@ -2,6 +2,45 @@
 <head>
     <meta charset="UTF-8">
     <title>My Resume</title>
+    <script> 
+    function validation()								 
+{ 
+	var name = document.forms["ContactForm"]["Name"];			 
+	var email = document.forms["ContactForm"]["EMail"];  
+
+	if (name.value == "")								 
+	{ 
+		window.alert("Please enter your name."); 
+		name.focus(); 
+		return false; 
+	} 
+
+	
+	if (email.value == "")								 
+	{ 
+		window.alert("Please enter a valid e-mail address."); 
+		email.focus(); 
+		return false; 
+	} 
+
+	if (email.value.indexOf("@", 0) < 0)				 
+	{ 
+		window.alert("Please enter a valid e-mail address."); 
+		email.focus(); 
+		return false; 
+	} 
+
+	if (email.value.indexOf(".", 0) < 0)				 
+	{ 
+		window.alert("Please enter a valid e-mail address."); 
+		email.focus(); 
+		return false; 
+	} 
+
+	return true; 
+}
+
+    </script>
     <link rel="stylesheet" href="contactform.css">
 </head>
 <body>
@@ -73,19 +112,17 @@
         <ol>Event Usher;  The Experience, Lagos  </ol>
         </div> 
         
-        <div>
-            <p><strong> <h3>Contact Form</strong></h3></p>
-            
-        </div>
 
 </header>
 </body>
 <footer>
+        <h1 style="text-align: center"> Contact Form </h1> 
             <form>
-                <p><input type="Name" placeholder="Name" name=""></p>
+                <p><input type="Name" placeholder="Your Name" name=""></p>
                 <p><input type="Email or Username" placeholder="example@mail.com" name=""></p>
                 <p><textarea name="" id="" cols="30" rows="10" placeholder="Send Me a Message"></textarea></p>
-                <p><button>SUBMIT</button></p>
-            </form>    
+                <p><input type="submit" value="submit" name="Submit">      
+                    
+       
 </footer>
 </html>
