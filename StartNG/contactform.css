@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.Contact-Me{
+    width: 250px; 
+    background: #fff; 
+    padding: 50px; 
+    margin: 120px auto; 
+    border-radius: 50px
+
+}
