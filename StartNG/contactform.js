@@ -1,5 +1,5 @@
 <script> 
-function Contact Form()								 
+function validate()								 
 { 
 	var name = document.forms["ContactForm"]["Name"];			 
 	var email = document.forms["ContactForm"]["EMail"];  
