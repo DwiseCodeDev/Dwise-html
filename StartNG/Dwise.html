@@ -2,45 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <title>My Resume</title>
-    <script> 
-    function validate()								 
-{ 
-	var name = document.forms["Guest.Name"]["Your Name"];			 
-	var email = document.forms["Guest.Email"]["Example@mail.com"];  
-
-	if (name.value == "")								 
-	{ 
-		window.alert("Please enter your name."); 
-		name.focus(); 
-		return false; 
-	} 
-
-	
-	if (email.value == "")								 
-	{ 
-		window.alert("Please enter a valid e-mail address."); 
-		email.focus(); 
-		return false; 
-	} 
-
-	if (email.value.indexOf("@", 0) < 0)				 
-	{ 
-		window.alert("Please enter a valid e-mail address."); 
-		email.focus(); 
-		return false; 
-	} 
-
-	if (email.value.indexOf(".", 0) < 0)				 
-	{ 
-		window.alert("Please enter a valid e-mail address."); 
-		email.focus(); 
-		return false; 
-	} 
-
-	return true; 
-}
-
-    </script>
+    <script src="contactform.js"></script>
+    
     <link rel="stylesheet" href="contactform.css">
 </head>
 <body>
